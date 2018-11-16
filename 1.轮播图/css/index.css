@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    user-select: none; /* 禁止选中文本 */
+}
+img {
+    display: block;
+}
+
+#wrap {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #333;
+    overflow: hidden;
+    margin: 100px auto 0 auto;
+    border: 10px solid #000;
+}
+#wrap #wrap_ul {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+#wrap li {
+    display: none;
+}
+#wrap img {
+    width: 500px;
+    height: 500px;
+}
+.btn {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -20px;
+    background: #999;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+    opacity: 0.6;
+    border: 5px solid #333;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.left_btn {
+    left: -5px;
+}
+.right_btn {
+    right: -5px;
+}
+.show_text {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-top: -20px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0.8;
+}
+.img_num {
+    top: 20px;
+}
+.img_title {
+    bottom: 0;
+}
+.button {
+    position: absolute;
+    top: 5px;
+    z-index: 4;
+    background: #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline:none;   /* 按钮点后没有边框 */
+    padding: 2px 10px;
+}
+.the-order {
+    left: 10px;
+}
+.infinite {
+    left: 110px;
+}
+ 
+/* oncontextmenu=”return false;” //禁止鼠标右键 */
+/* ondragstart=”return false;” //禁止鼠标拖动 */
+/* onselectstart=”return false;”//文字禁止鼠标选中 */
+/* onselect=”document.selection.empty();”//禁止复制文本 */
